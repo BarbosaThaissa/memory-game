@@ -25,7 +25,7 @@
 
 ## 💻 Project
 
-Live preview: https://barbosathaissa.github.io/memory-game/
+Live preview: https://gamememorycard.netlify.app/
 
 A memory card game with The Amazing World Of Gumball characters using JavaScript and React.
 
