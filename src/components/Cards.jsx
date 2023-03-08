@@ -1,27 +1,29 @@
 import React from "react";
 //styled
-import {
-  DivImg,
-  Img,
-  DivTitle,
-  CardContainer,
-} from "./styleds/Card";
+import { DivImg, Img, DivTitle, CardContainer } from "./styleds/Card";
 
-const Cards = ({ card }) => {
-  const { id, image, title } = card;
+const Cards = (props) => {
+  const handleClick = () => {
+    if (props.clicked.includes(props.title)) {
+      props.gameOver();
+      props.randomizeCards();
+    } else {
+      props.incrementScore();
+      props.handleCardsClick(props.title);
+      props.randomizeCards();
+    }
+  };
 
   return (
-    
-      <CardContainer>
-        <DivImg>
-          <Img src={image} alt="character image" />
-        </DivImg>
+    <CardContainer onClick={handleClick}>
+      <DivImg>
+        <Img src={props.image} alt="character image" />
+      </DivImg>
 
-        <DivTitle>
-          <h2>{title}</h2>
-        </DivTitle>
-      </CardContainer>
-    
+      <DivTitle>
+        <h2>{props.title}</h2>
+      </DivTitle>
+    </CardContainer>
   );
 };
 

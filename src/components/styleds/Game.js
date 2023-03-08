@@ -22,8 +22,8 @@ export const DivSpan = styled.div`
 
   @media (max-width: 750px) {
     flex-direction: column;
-    width: 250px;
-    gap: 3rem;
+    width: 240px;
+    gap: 1rem;
   }
 `;
 

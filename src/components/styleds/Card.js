@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { lightTheme, darkTheme } from '../theme';
+import { lightTheme, darkTheme } from "../theme";
 
 export const CardContainer = styled.div`
   display: flex;
@@ -13,6 +13,7 @@ export const CardContainer = styled.div`
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   transition: transform 0.3s ease 0s;
   cursor: pointer;
+  border: ${({ theme }) => theme.border};
 
   &:hover {
     transform: scale(1.05);

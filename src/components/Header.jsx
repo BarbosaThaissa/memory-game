@@ -17,6 +17,19 @@ const HeaderContainer = styled.header`
   & > div {
     padding-right: 1rem;
   }
+
+  @media (max-width: 550px) {
+    padding: 0;
+    & > h1 {
+      visibility: hidden;
+    }
+
+    & > h1:after {
+      visibility: visible;
+      position: absolute;
+      top: 37px;
+      content: "Memory Game";
+  }
 `;
 
 const Header = (props) => {
