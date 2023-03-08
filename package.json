@@ -1,9 +1,9 @@
 {
   "name": "memory-game",
   "private": true,
+  "homepage": "https://barbosathaissa.github.io/memory-game/",
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://barbosathaissa.github.io/memory-game/",
   "scripts": {
     "dev": "vite",
     "test": "jest",
